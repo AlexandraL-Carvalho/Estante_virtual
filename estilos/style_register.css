@@ -1,0 +1,114 @@
+/* ===== Estilo geral ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f3ede4; /* tom bege claro */
+    color: #3b2f2f; /* marrom escuro */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #4a3c2a; /* marrom terroso */
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ===== Estrutura principal ===== */
+form {
+    background-color: #fffaf3;
+    border: 1px solid #d9c7a3;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(100, 80, 50, 0.1);
+}
+
+/* ===== Campos de entrada ===== */
+label {
+    display: block;
+    font-weight: 600;
+    color: #4a3c2a;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #c2a97b;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fffdf8;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #a07b50;
+    outline: none;
+}
+
+/* ===== Botões ===== */
+input[type="submit"] {
+    background-color: #a77b50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #8b6544;
+}
+
+/* ===== Grupos de opções (radio e checkbox) ===== */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #a77b50;
+    margin-right: 5px;
+}
+
+/* ===== Separadores ===== */
+hr {
+    border: none;
+    border-top: 1px solid #d9c7a3;
+    margin: 40px auto;
+    width: 80%;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+    form {
+        padding: 15px 20px;
+        width: 90%;
+    }
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #6f4b2e;
+}
+

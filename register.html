@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Entre páginas</title>
+    <link rel="stylesheet" href="estilos/style_register.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+      <nav>
+         <h1 class="logo">Entre páginas!📚 </h1>
+         <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="register.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+         </ul>
+      </nav>
+   </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Realize o seu cadastro para compartilhar a sua estante virtual</h2>
+
+            <form id="cadastroForm" action="backend/register.php" method="POST">
+                <label for="pnome">Primeiro nome:</label>
+                <input type="text" id="pnome" name="pnome" required>
+
+                <label for="lnome">Último nome:</label>
+                <input type="text" id="lnome" name="lnome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="confirmasenha">Confirmar senha:</label>
+                <input type="password" id="confirmasenha" name="confirmasenha" required>
+
+                <h2>Beleza! Agora queremos conhecer um pouco sobre você:</h2>
+
+                <p>Formato favorito de leitura:</p>
+                <label><input type="radio" name="fav_formato" value="Livro" required>Livro</label>
+                <label><input type="radio" name="fav_formato" value="Kindle">Kindle</label>
+                <label><input type="radio" name="fav_formato" value="Celular">Celular</label>
+                <label><input type="radio" name="fav_formato" value="Audiolivro">Audiolivro</label>
+
+                <h2>Qual é o seu gênero favorito?</h2>
+                <p>Você pode selecionar quantas opções desejar!</p>
+
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" name="genero" value="Ação"> Ação</label>
+                    <label><input type="checkbox" name="genero" value="Aventura"> Aventura</label>
+                    <label><input type="checkbox" name="genero" value="Biografia"> Biografia</label>
+                    <label><input type="checkbox" name="genero" value="Clássico"> Clássico</label>
+                    <label><input type="checkbox" name="genero" value="Comédia"> Comédia</label>
+                    <label><input type="checkbox" name="genero" value="Conto"> Conto</label>
+                    <label><input type="checkbox" name="genero" value="Crônica"> Crônica</label>
+                    <label><input type="checkbox" name="genero" value="Distopia"> Distopia</label>
+                    <label><input type="checkbox" name="genero" value="Drama"> Drama</label>
+                    <label><input type="checkbox" name="genero" value="Ensaio"> Ensaio</label>
+                    <label><input type="checkbox" name="genero" value="Fantasia"> Fantasia</label>
+                    <label><input type="checkbox" name="genero" value="Ficção Científica"> Ficção Científica</label>
+                    <label><input type="checkbox" name="genero" value="Ficção Histórica"> Ficção Histórica</label>
+                    <label><input type="checkbox" name="genero" value="Horror / Terror"> Horror / Terror</label>
+                    <label><input type="checkbox" name="genero" value="Infantil"> Infantil</label>
+                    <label><input type="checkbox" name="genero" value="Mistério"> Mistério</label>
+                    <label><input type="checkbox" name="genero" value="Poesia"> Poesia</label>
+                    <label><input type="checkbox" name="genero" value="Policial"> Policial</label>
+                    <label><input type="checkbox" name="genero" value="Religioso"> Religioso</label>
+                    <label><input type="checkbox" name="genero" value="Romance"> Romance</label>
+                    <label><input type="checkbox" name="genero" value="Suspense"> Suspense</label>
+                    <label><input type="checkbox" name="genero" value="Thriller"> Thriller</label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>© 2025 Entre Páginas — Desenvolvido por Alexandra Carvalho</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+/* ==============================
+   ESTILO PADRÃO - ENTRE PÁGINAS
+   Tons neutros e terrosos
+   ============================== */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background-color: #f7f3ef; /* tom bege claro */
+  color: #3b2f2f;            /* marrom escuro */
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Cabeçalho e Menu
+-------------------------------- */
+header {
+  background-color: #8b5e3c;  /* marrom médio */
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   Conteúdo principal
+-------------------------------- */
+.container {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #fffdf9;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos e textos */
+h1, h2, h3 {
+  color: #4a3728;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* ------------------------------
+   Imagens e seções
+-------------------------------- */
+.banner {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* ------------------------------
+   Formulários
+-------------------------------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 8px 10px;
+  border: 1px solid #d5c4b2;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #faf7f4;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #8b5e3c;
+  box-shadow: 0 0 4px rgba(139, 94, 60, 0.4);
+}
+
+button {
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #6f4b2e;
+}
+
+/* ------------------------------
+   Links
+-------------------------------- */
+a {
+  color: #8b5e3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   Rodapé
+-------------------------------- */
+footer {
+  background-color: #8b5e3c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+   Responsividade
+-------------------------------- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .banner {
+    max-width: 100%;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: #8b5e3c;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #6f4b2e;
+}
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Entre Páginas</title>
+  <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Entre Páginas 📚</h1>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="register.html">Cadastro</a></li>
+        <li><a href="login.html" class="ativo">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Faça seu login</h2>
+    <form action="backend/login.php" method="POST">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Entre Páginas — Desenvolvido por Alexandra Carvalho</p>
+  </footer>
+</body>
+</html>
