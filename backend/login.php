@@ -56,7 +56,7 @@ $conn->close();
 <body>
   <header>
     <nav>
-      <div class="logo">Estante Virtual</div>
+      <div class="logo">Entre páginas!📚</div>
       <ul>
         <li><a href="../index.html">Início</a></li>
         <li><a href="../login.html">Login</a></li>
